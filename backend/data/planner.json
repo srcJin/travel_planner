@@ -1,0 +1,217 @@
+{
+  "meta": [
+    {
+      "_id": "trip",
+      "_collection": "meta",
+      "name": "Mock Iberia Weekend",
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-19",
+      "currency": "€"
+    },
+    {
+      "_id": "visa",
+      "_collection": "meta",
+      "type": "Sample travel window",
+      "entry_date": "2026-06-18",
+      "exit_date": "2026-06-20",
+      "max_days": 2,
+      "used_days": 2
+    }
+  ],
+  "days": [
+    {
+      "_id": "day-001",
+      "_collection": "days",
+      "date": "2026-06-18",
+      "day_number": 1,
+      "country": "Spain",
+      "location": "Barcelona",
+      "notes": "Architecture-focused arrival day with flexible evening time.",
+      "status": "planned"
+    },
+    {
+      "_id": "day-002",
+      "_collection": "days",
+      "date": "2026-06-19",
+      "day_number": 2,
+      "country": "Spain",
+      "location": "Valencia",
+      "notes": "Morning train transfer followed by a compact city walk.",
+      "status": "planned"
+    }
+  ],
+  "accommodation": [
+    {
+      "_id": "stay-001",
+      "_collection": "accommodation",
+      "name": "Sample Design Hotel Barcelona",
+      "start_date": "2026-06-18",
+      "end_date": "2026-06-19",
+      "address": "Eixample, Barcelona, Spain",
+      "cost": 145,
+      "currency": "EUR",
+      "booking_status": "unbooked",
+      "check_in_time": "15:00",
+      "check_out_time": "11:00",
+      "notes": "Mock stay record for testing CRUD, map, cost, and accommodation display.",
+      "location": {
+        "lat": 41.3917,
+        "lng": 2.1649
+      },
+      "show_on_map": true
+    }
+  ],
+  "transportation": [
+    {
+      "_id": "transport-001",
+      "_collection": "transportation",
+      "day": "2026-06-18",
+      "type": "metro",
+      "from": "Barcelona Sants",
+      "to": "Eixample",
+      "time": "14:10",
+      "end_time": "14:35",
+      "duration": "25m",
+      "carrier": "TMB",
+      "cost": 2.55,
+      "currency": "EUR",
+      "booking_status": "unbooked",
+      "notes": "Sample arrival transfer.",
+      "location": {
+        "lat": 41.3791,
+        "lng": 2.1403
+      },
+      "show_on_map": false
+    },
+    {
+      "_id": "transport-002",
+      "_collection": "transportation",
+      "day": "2026-06-19",
+      "type": "train",
+      "from": "Barcelona Sants",
+      "to": "Valencia Joaquin Sorolla",
+      "time": "08:15",
+      "end_time": "11:05",
+      "duration": "2h50m",
+      "carrier": "Sample Rail",
+      "cost": 42,
+      "currency": "EUR",
+      "booking_status": "unbooked",
+      "booking_required": true,
+      "booking_link": "https://www.renfe.com",
+      "notes": "Mock intercity rail segment. Replace with a real option when planning.",
+      "location": {
+        "lat": 41.3791,
+        "lng": 2.1403
+      },
+      "show_on_map": false
+    },
+    {
+      "day": "2026-06-18",
+      "type": "train",
+      "from": "Barcelona",
+      "to": "",
+      "time": "09:00",
+      "end_time": "12:00",
+      "duration": "3h",
+      "carrier": "",
+      "booking_ref": "",
+      "cost": 0,
+      "booking_status": "unbooked",
+      "location": {
+        "lat": 0,
+        "lng": 0
+      },
+      "_id": "173e38d2",
+      "_collection": "transportation"
+    }
+  ],
+  "activities": [
+    {
+      "_id": "activity-001",
+      "_collection": "activities",
+      "day": "2026-06-18",
+      "title": "Casa Mila exterior study",
+      "group": "",
+      "hierarchy": "anchor",
+      "time": "16:00",
+      "end_time": "17:00",
+      "duration": "1h",
+      "cost": 0,
+      "currency": "EUR",
+      "booking_status": "unbooked",
+      "booking_required": false,
+      "notes": "Mock activity with map coordinates and editable planning fields.",
+      "location": {
+        "lat": 41.3954,
+        "lng": 2.1619
+      },
+      "show_on_map": true
+    },
+    {
+      "_id": "activity-002",
+      "_collection": "activities",
+      "day": "2026-06-18",
+      "title": "Gracia dinner walk",
+      "group": "",
+      "hierarchy": "flexible",
+      "time": "19:30",
+      "end_time": "21:00",
+      "duration": "1h30m",
+      "cost": 28,
+      "currency": "EUR",
+      "booking_status": "unbooked",
+      "booking_required": false,
+      "notes": "Flexible evening block for testing drag, edit, and cost totals.",
+      "location": {
+        "lat": 41.4024,
+        "lng": 2.1586
+      },
+      "show_on_map": true
+    },
+    {
+      "_id": "activity-003",
+      "_collection": "activities",
+      "day": "2026-06-19",
+      "title": "Central Market lunch",
+      "group": "Food",
+      "hierarchy": "semi_flexible",
+      "time": "12:30",
+      "end_time": "13:30",
+      "duration": "1h",
+      "cost": 18,
+      "currency": "EUR",
+      "booking_status": "unbooked",
+      "booking_required": false,
+      "notes": "Mock lunch stop after the train transfer.",
+      "location": {
+        "lat": 39.4742,
+        "lng": -0.3791
+      },
+      "show_on_map": true
+    },
+    {
+      "_id": "activity-004",
+      "_collection": "activities",
+      "day": "2026-06-19",
+      "title": "City of Arts and Sciences",
+      "group": "Architecture",
+      "hierarchy": "anchor",
+      "time": "15:00",
+      "end_time": "17:00",
+      "duration": "2h",
+      "cost": 12,
+      "currency": "EUR",
+      "booking_status": "unbooked",
+      "booking_required": true,
+      "booking_link": "https://www.cac.es",
+      "notes": "Sample paid attraction entry for testing booking fields.",
+      "location": {
+        "lat": 39.4548,
+        "lng": -0.3505
+      },
+      "show_on_map": true
+    }
+  ],
+  "costs": []
+}

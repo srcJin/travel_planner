@@ -1,0 +1,41 @@
+# Local/private workspace files
+/.claude/
+/.superpowers/
+/.vscode/
+
+# Backend local state
+backend/.env
+backend/.venv/
+backend/__pycache__/
+backend/.pytest_cache/
+backend/data/*.bak
+
+# Frontend local state
+frontend/.env*
+!frontend/.env.example
+frontend/.next/
+frontend/.vercel/
+frontend/.runtime/
+frontend/node_modules/
+frontend/out/
+frontend/test-results/
+frontend/tsconfig.tsbuildinfo
+frontend/next-env.d.ts
+frontend/public/uploads/
+
+# Local-only AI/agent files excluded from the share branch
+frontend/AGENTS.md
+frontend/CLAUDE.md
+frontend/src/components/ai-review.tsx
+frontend/src/components/chat-panel.tsx
+frontend/src/components/conversation-nav.tsx
+frontend/src/components/day-chat-panel.tsx
+frontend/src/components/day-input.tsx
+frontend/src/components/doc-ai-chat.tsx
+frontend/src/components/quick-import.tsx
+frontend/src/hooks/use-ai.ts
+frontend/src/store/conversations.ts
+
+# OS/editor noise
+.DS_Store
+*.swp
